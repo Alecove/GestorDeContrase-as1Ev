@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Añadir Sitio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor-centro">
+        <h2 style="margin-top:0;">Nuevo Sitio</h2>
+        
+        <label>Nombre del sitio:</label>
+        <input type="text" id="nombre" placeholder="Ej: Facebook">
+        <span id="errorNombre" class="error"></span>
+
+        <label>Usuario:</label>
+        <input type="text" id="usuario" placeholder="Ej: mi_email@gmail.com">
+
+        <label>Contraseña:</label>
+        <div style="display:flex; gap:10px;">
+            <input type="text" id="pass">
+            <button id="btnGenerar" class="btn-azul" style="height: 38px;">Generar</button>
+        </div>
+
+        <button id="btnGuardar" class="btn-verde">Guardar Sitio</button>
+        <br><br>
+        <div style="text-align: center;">
+            <a href="index.html" class="link-cancelar">Cancelar y volver</a>
+        </div>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="site.js"></script>
+</body>
+</html>

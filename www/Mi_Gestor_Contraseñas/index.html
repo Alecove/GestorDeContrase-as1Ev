@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor Contraseñas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <aside>
+            <h2>Categorías</h2>
+            
+            <div style="display: flex; gap: 5px; margin-bottom: 10px;">
+                <select id="selectIcono" style="padding: 5px; border-radius: 5px; border: 1px solid #ccc; cursor: pointer;">
+                    <option value="📁">📁</option>
+                    <option value="❤️">❤️</option>
+                    <option value="💼">💼</option>
+                    <option value="🛒">🛒</option>
+                    <option value="🎮">🎮</option>
+                    <option value="🌎">🌎</option>
+                    <option value="🔒">🔒</option>
+                    <option value="🎓">🎓</option>
+                </select>
+                <input type="text" id="inputCategoria" placeholder="Nueva categoría..." style="margin: 0; flex: 1;">
+            </div>
+            
+            <button id="btnNuevaCat" class="btn-azul" style="width: 100%;">Añadir +</button>
+            
+            <div id="listaCategorias" style="margin-top: 20px;">
+                </div>
+        </aside>
+        <main>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h1 id="tituloCategoria">Selecciona una categoría</h1>
+                <button id="btnIrFormulario" class="btn-azul" style="display:none">Nuevo Sitio</button>
+            </div>
+            
+            <div id="listaSitios">
+                </div>
+        </main>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
